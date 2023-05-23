@@ -1,4 +1,4 @@
-package com.example.universidadtrackerapplication.viewmodel
+package com.example.universidadtrackerapplication.ui.viewmodel
 
 import android.text.Spannable.Factory
 import androidx.lifecycle.MutableLiveData
