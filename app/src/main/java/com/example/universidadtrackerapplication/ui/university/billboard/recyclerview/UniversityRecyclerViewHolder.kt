@@ -1,9 +1,9 @@
-package com.example.universidadtrackerapplication.ui.university.recyclerview
+package com.example.universidadtrackerapplication.ui.university.billboard.recyclerview
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.universidadtrackerapplication.data.model.UniversityModel
 import com.example.universidadtrackerapplication.databinding.UniversityItemBinding
-import com.example.universidadtrackerapplication.ui.viewmodel.UniversityViewModel
+import com.example.universidadtrackerapplication.ui.university.viewmodel.UniversityViewModel
 
 class UniversityRecyclerViewHolder (private val binding: UniversityItemBinding): RecyclerView.ViewHolder(binding.root) {
 

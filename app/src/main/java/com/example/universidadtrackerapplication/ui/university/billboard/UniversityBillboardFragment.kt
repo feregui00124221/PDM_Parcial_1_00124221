@@ -1,4 +1,4 @@
-package com.example.universidadtrackerapplication.ui.university
+package com.example.universidadtrackerapplication.ui.university.billboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.universidadtrackerapplication.R
 import com.example.universidadtrackerapplication.data.model.UniversityModel
 import com.example.universidadtrackerapplication.databinding.FragmentUniversitiesBillboardBinding
-import com.example.universidadtrackerapplication.ui.university.recyclerview.UniversityRecyclerViewAdapter
-import com.example.universidadtrackerapplication.ui.viewmodel.UniversityViewModel
+import com.example.universidadtrackerapplication.ui.university.billboard.recyclerview.UniversityRecyclerViewAdapter
+import com.example.universidadtrackerapplication.ui.university.viewmodel.UniversityViewModel
 
 class UniversityBillboardFragment: Fragment() {
 
@@ -45,7 +46,7 @@ class UniversityBillboardFragment: Fragment() {
         binding.btnCreteNewUniversity.setOnClickListener {
             universityViewModel.clearData()
             universityViewModel.clearStatus()
-//            it.findNavController().navigate(R.id.action_billboardFragment_to_newMovieFragment)
+            it.findNavController().navigate(R.id.action_universityBillboardFragment2_to_newUniversityFragment)
         }
     }
 
@@ -53,7 +54,7 @@ class UniversityBillboardFragment: Fragment() {
 
         universityViewModel.setSelectedUniversity(_university)
 
-//        findNavController().navigate(R.id.action_billboardFragment_to_movieFragment)
+        findNavController().navigate(R.id.action_universityBillboardFragment2_to_universityFragment)
 
     }
 

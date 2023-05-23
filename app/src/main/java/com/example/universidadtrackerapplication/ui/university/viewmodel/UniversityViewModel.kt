@@ -1,4 +1,4 @@
-package com.example.universidadtrackerapplication.ui.viewmodel
+package com.example.universidadtrackerapplication.ui.university.viewmodel
 
 import android.text.Spannable.Factory
 import androidx.lifecycle.MutableLiveData
@@ -63,7 +63,7 @@ class UniversityViewModel(private val repository: UniversityRepository): ViewMod
         }
 
         const val CREATED = "University has been successfully created and added to the app."
-        const val INVALID = "Either data is empty or field are filled wrongfully. Please check."
+        const val INVALID = "Either data is empty or field(s) are filled wrongfully. Please check."
         const val BASE = "Base state of university has been set."
 
     }

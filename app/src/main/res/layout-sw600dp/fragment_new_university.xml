@@ -14,7 +14,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:background="@color/backgroundLayout">
 
         <LinearLayout
@@ -37,7 +36,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nameTV"
-                android:layout_width="match_parent"
+                android:textSize="@dimen/mediumTextGap"
+                android:layout_width="512dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/LargeGap"
                 android:hint="Nombre de la universidad"
@@ -47,6 +47,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:textColor="@color/white"
+                    android:textSize="@dimen/mediumTextGap"
                     android:id="@+id/name_value"
                     android:text="@={viewmodel.name}"
                     android:layout_width="match_parent"
@@ -57,9 +58,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/locationTV"
-                android:layout_width="match_parent"
+                android:layout_width="512dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/LargeGap"
+                android:textSize="@dimen/mediumTextGap"
                 android:hint="Ubicacion"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
@@ -71,15 +73,19 @@
                     android:text="@={viewmodel.location}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/cardLayout" />
+                    android:textSize="@dimen/mediumTextGap"
+                    android:background="@color/cardLayout"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btn_Submit"
                 android:onClick="@{ () -> viewmodel.createUniversity() }"
-                android:layout_width="wrap_content"
+                android:layout_width="256dp"
+                android:textSize="@dimen/mediumTextGap"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/mediumGap"
                 android:layout_margin="@dimen/mediumGap"
                 android:backgroundTint="@color/buttonColor"
                 android:text="@string/btn_create_string"

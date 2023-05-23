@@ -1,4 +1,4 @@
-package com.example.universidadtrackerapplication.ui.university.recyclerview
+package com.example.universidadtrackerapplication.ui.university.billboard.recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

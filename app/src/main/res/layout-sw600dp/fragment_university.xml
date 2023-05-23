@@ -19,7 +19,7 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_gravity="center"
             android:id="@+id/card"
-            android:layout_width="match_parent"
+            android:layout_width="512dp"
             android:layout_height="256dp"
             android:layout_margin="@dimen/LargeGap"
             style="?attr/materialCardViewElevatedStyle"
