@@ -6,7 +6,7 @@ import com.example.universidadtrackerapplication.repository.UniversityRepository
 
 class UniversityTrackerApplication: Application() {
 
-    val _universityRepository: UniversityRepository by lazy {
+    val AppUniversityRepository: UniversityRepository by lazy {
         UniversityRepository(universitiesListDummyData)
     }
 }
